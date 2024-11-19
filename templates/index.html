@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ana Sayfa</title>
+    <!-- CSS Dosyasına Bağlantı -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Hoş geldiniz!</h1>
+    <p><a href="/login">Giriş Yap</a> | <a href="/signup">Kayıt Ol</a></p>
+    
+    <!-- JS Dosyasına Bağlantı -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

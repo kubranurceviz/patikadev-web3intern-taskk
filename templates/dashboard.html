@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+    <h2>Analyze Your Skills</h2>
+
+    <form method="post" action="{{ url_for('fetch_github_data') }}">
+        <label for="github_token">GitHub Token:</label>
+        <input type="text" id="github_token" name="github_token" required>
+        <button type="submit">Analyze Skills</button>
+    </form>
+</body>
+</html>

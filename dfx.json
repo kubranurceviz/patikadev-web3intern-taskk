@@ -1,0 +1,24 @@
+{
+    "canisters": {
+      "SkillManager": {
+        "type": "motoko",
+        "main": "src/SkillManager.mo",
+        "candid": "src/SkillManager.did",
+        "wasm": "SkillManager.wasm",
+        "http_request": true
+      }
+    },
+    "networks": {
+      "local": {
+        "bind": "127.0.0.1:8000",
+        "type": "ephemeral"
+      }
+    },
+    "defaults": {
+      "build": {
+        "output": "build"
+      }
+    },
+    "version": 1
+  }
+  

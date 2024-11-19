@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kayıt Ol</title>
+    <!-- CSS Dosyasına Bağlantı -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Kayıt Ol</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="github_username">GitHub Kullanıcı Adı:</label>
+        <input type="text" id="github_username" name="github_username" required><br><br>
+        
+        <label for="cv">CV Yükle (PDF):</label>
+        <input type="file" id="cv" name="cv" accept=".pdf" required><br><br>
+        
+        <button type="submit">Kayıt Ol</button>
+    </form>
+
+    <!-- JS Dosyasına Bağlantı -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
